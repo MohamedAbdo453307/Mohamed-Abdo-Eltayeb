@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 20px;
+}
+h1{
+    font-size: 60px;
+    padding:25px 0;
+    color: white;
+    font-weight: 300;
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 5px;
+}
+
+/* -----------------------------------------home--------------------------------- */
+.navbar{
+    width: 100%;
+    background:#000 ;
+    color: #fafafa;
+    border-bottom: 1px solid #001;
+    
+}
+.navbar .nav{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+.navbar .nav ul {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    font-size: 20px;
+}
+
+.navbar .nav ul li a:hover{
+
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 15px;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.container-home {
+    width: 100%;
+    height:100vh;
+    background: #000;
+    align-items: center;
+}
+
+.container-home .content{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-home .content .title ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-home .content .title ul i{
+    margin: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: #000;
+    transition: 0.5s;
+}
+.container-home .content .title #btn{
+    width: 200px;
+    text-align: center;
+    position: relative;
+    background: white;
+    color: #000;
+    top: 50px;
+    left: 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.container-home .content .title #btn i{
+    border-radius: 50%;
+    color: #fafafa;
+}
+.container-home .content .title #btn:hover{
+    background-color:cornflowerblue ;
+}
+.container-home .content .title ul i:hover{
+    transform: scale(1.2);
+}
+.container-home .content .image img:hover{
+    transform: scale(1.2)
+}
+.container-home .content .image img{
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+/* ---------------------------------------about---------- */
+#about ,.contact{
+    width: 100%;
+    height: 100vh;
+
+}
+#about .title,.skils .title,#service .title ,#Portfolio .title,#contact .title{
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    font-weight: 500;
+    color: #000;
+
+}
+#about .title hr ,.skils .title hr ,#service .title hr ,#Portfolio .title hr,#contact .title hr{
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid cornflowerblue;
+    width: 150px;
+}
+#about p{
+    color: #000;
+}
+#about .content{
+    width: 80%;
+    height: 80%;
+    /* background: cyan; */
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about .content .col1{
+    width: 60%;
+    line-height: 30px;
+    
+}
+#about .content .col1 h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight:700 ;
+    color: #000;
+    text-transform: uppercase;
+
+}
+#about .content .col1 p{
+    font-size: 20px;
+    color: #000;
+}
+#about .content .col1 h3 span{
+    color: cornflowerblue;
+   
+}
+/* -----------------------------skills---------------------------------------- */
+.skils ,#service{
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+  
+}
+.skils .title ,#service .title{
+    padding: 30px;
+}
+.skils .title span{
+    color: white;
+}
+.skils .items ,#service .items{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+      flex-wrap: wrap;
+}
+.skils .item {
+    background-color: #000;
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+
+
+  
+}
+
+.skils .item img{
+    width: 100px;
+    border: radius 20px;;
+    text-align: center;
+
+}
+/* -----------------------------------------service---------------- */
+#service h3{
+    color: cornflowerblue;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#service .items .item{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: cornsilk;
+    border-radius: 10px;
+
+}
+#service .title span{
+    color: cornflowerblue;
+}
+#service .items .item p{
+    color: #000;
+    padding-top: 10px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+/* ------------------------------portfolio--------------------------------- */
+#Portfolio{
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+#Portfolio span{
+    color: cornflowerblue;
+}
+#Portfolio .items .item .item-content a {
+    color: cornflowerblue;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    bottom: 5px;
+   
+}
+#Portfolio .items .item .item-content a:hover{
+    color: royalblue;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+#Portfolio .items .item .item-content h3{
+    font-size: 20px;
+    color: #001;
+   
+}
+#Portfolio .items .item .item-content{
+    margin-bottom: 8px;
+    
+
+}
+#Portfolio .items{
+    width: 80%;
+    height:100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+   
+
+}
+#Portfolio .items .item{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 8px #001;
+    transition: 0.5s;
+}
+#Portfolio .items .item:hover{
+    transform: scale(1.01);
+}
+#Portfolio img{
+    width: 100%;
+    height: 80%;
+}
+/* -----------------contact--------------------------------- */
+#contact .content{
+    /* background-color: aqua; */
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+#contact .content .image img{
+    width: 500px;
+    margin-bottom: 50px;
+}
+#contact .content .input{
+    display: flex;
+    flex-direction: column;
+    margin-right:5rem;
+    width: 350px;
+    
+
+}
+#contact .content .input input{
+    padding:0.5rem;
+    margin: 0.5rem;
+    outline: none;
+    font-family: cursive;
+    border: none;
+    background-color: rgba(169, 169, 169, 0.137);
+}
+#contact .content .input input:hover{
+    border: 0.5px solid cornflowerblue;
+}
+#contact .content .input textarea:hover{
+    border: 0.5px solid cornflowerblue;
+}
+#contact .content .input textarea{
+    padding:0.5rem;
+    margin: 0.5rem;
+    width: 318px;
+    outline: none;
+    font-family: cursive;
+    border: none;
+    background-color: rgba(169, 169, 169, 0.116);
+}
+#contact span{
+    color: cornflowerblue;
+}
+#contact .content #btn{
+    width: 120px;
+    font-size: 18px;
+    font-family: cursive;
+    background-color: rgba(100, 148, 237, 0.747);
+    border: none;
+    border-radius: 5px;
+ 
+}
+#contact .content #btn:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+/* ---------------------------footer----------------------------- */
+footer{
+    width: 100%;
+    margin-top: 20px;
+    height: 2rem;
+    background-color: #333;
+    text-align: center;
+    align-items: center;
+
+}
+/* -------------------------------------------------------------------------------------------------- */
+@media (max-width:768px) {
+    body{
+        width: 100%;
+    }
+    .navbar .nav{
+        
+        padding-right: 30px;
+    }
+    #about .content{
+        width: 100%;
+    }
+    #about .content .col1{
+        width: 50%;
+        line-height: 35px;
+        margin-left: 10px;
+    }
+    
+    #service .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #Portfolio .items .item .item-content a{
+        position: relative;
+        bottom: 6px;
+    }
+    #Portfolio .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+       
+    }
+    #contact .content{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+    }
+    #contact .content .image img{
+        margin-left: 0;
+    }
+    #contact .content .input{
+        position: relative;
+        left: 0;
+    }
+
+
+}
+@media(max-width:528px) {
+    #service .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Portfolio .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+       
+    }
+    #contact .content .image img{
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    #contact .content{
+        width: 100%;
+        height: 100%;
+        display: grid;
+    }
+    footer{
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        
+    
+    }
+    footer p{
+        font-size: 15px;
+    }
+    .skils .items{
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+    #about {
+        width: 100%;
+        height: 100%;
+    }
+    #about .content {
+        width: 100%;
+        display: grid;
+}
+#about .content .col1{
+    width: 95%;
+    margin-left: 5px;
+
+
+}
+#about .content .col2 p{
+    font-size: 14px;
+}
+    #about p{
+        font-size: 10px;
+        line-height: 29px;
+    }
+    .navbar .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .nav ul{
+        padding-top: 15px;
+       
+        margin: auto;
+    }
+    .navbar .nav ul li{
+        padding: 0 6px;
+    }
+    .container-home .content{
+        display: block;
+    }
+    .container-home .content .image img{
+        position: relative ;
+        right: 20px;
+        top: 70px;
+        transition: 0.5s;
+    }
+    .container-home .content .image img:hover{
+     transform: scale(.9);
+    }
+
+}
