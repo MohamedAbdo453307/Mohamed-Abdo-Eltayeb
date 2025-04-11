@@ -433,7 +433,7 @@ footer{
 
 
 }
-@media(max-width:528px) {
+@media(max-width:600px) {
     #service .items{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -497,17 +497,19 @@ footer{
     }
     .navbar .nav ul{
         padding-top: 15px;
+        postion:relative;
+        right:30px;
        
         margin: auto;
     }
     .navbar .nav ul li{
-        padding: 0 6px;
+        padding: 0 5px;
     }
     .container-home .content{
         display: block;
     }
     .container-home .content .image img{
-        width:350px;
+        width:300px;
         position: relative ;
         right: 20px;
         top: 70px;
