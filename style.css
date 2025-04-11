@@ -507,6 +507,7 @@ footer{
         display: block;
     }
     .container-home .content .image img{
+        width:350px;
         position: relative ;
         right: 20px;
         top: 70px;
